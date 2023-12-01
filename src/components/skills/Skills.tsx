@@ -36,12 +36,12 @@ const Skills = () => {
         <Heading text="skills." />
 
         <div>
-          <p className={`opacity-20 text-sm`}>&#60;p&#62;</p>
-          <p className="paragraph">
+          <p className={`opacity-20 text-lg`}>&#60;p&#62;</p>
+          <p className="paragraph ml-4">
             Here are some of the technologies I&rsquo;ve been working with
             recently:
           </p>
-          <p className={`opacity-20 text-sm`}>&#60;&#47;p&#62;</p>
+          <p className={`opacity-20 text-lg`}>&#60;&#47;p&#62;</p>
 
           <p className=" mt-10 text-2xl font-bold">Tools:</p>
           <ul className="mt-2 grid grid-cols-2 gap-y-2 gap-x-8 sm:grid-cols-3 sm:gap-x-14 md:gap-x-10 lg:grid-cols-4">

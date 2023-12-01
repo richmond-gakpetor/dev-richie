@@ -61,12 +61,12 @@ const Contact = () => {
         <Heading text="contact." />
 
         <div>
-          <p className={`opacity-20 text-sm`}>&#60;p&#62;</p>
-          <p className="paragraph">
+          <p className={`opacity-20 text-lg`}>&#60;p&#62;</p>
+          <p className="paragraph ml-4">
             If you would like to get in touch, reach out to me on any one of
             these platforms.
           </p>
-          <p className={`opacity-20 text-sm`}>&#60;&#47;p&#62;</p>
+          <p className={`opacity-20 text-lg`}>&#60;&#47;p&#62;</p>
         </div>
 
         <ul>{contacts}</ul>

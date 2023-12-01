@@ -20,8 +20,8 @@ const About = () => {
             <p className="text">Software Engineer</p>
           </Fragment>
           <br></br>
-          <Fragment>
-            <p className={`opacity-20 text-sm`}>&#60;p&#62;</p>
+          <p className={`opacity-20 text-lg`}>&#60;p&#62;</p>
+          <div className="ml-4">
             <p className="paragraph">
               ☁️ - As a fullstack developer with a deep passion for cloud
               architecture, I thrive on crafting innovative solutions that
@@ -53,9 +53,8 @@ const About = () => {
               contributing to a future where technology is both powerful and
               approachable. Let's build something amazing
             </p>
-
-            <p className={`opacity-20 text-sm`}>&#60;&#47;p&#62;</p>
-          </Fragment>
+          </div>
+          <p className={`opacity-20 text-lg`}>&#60;&#47;p&#62;</p>
         </div>
       </article>
     </Section>
