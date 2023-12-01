@@ -2,8 +2,6 @@ import Section from "@/components/Section";
 import GradientBackground from "@/components/ui/GradientBackground";
 import { satoshiBlack, satoshiMedium } from "@/components/utils/font";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
-import { TiBusinessCard } from "react-icons/ti";
 
 const Overview = () => {
   const title = () => {
@@ -13,7 +11,7 @@ const Overview = () => {
       <div className="z-20">
         <Link
           target="_blank"
-          className="text-blue-200 items-center font-bold flex flex-row gap-1 text-xl underline-offset-4 hover:underline"
+          className="ml-4 xl:ml-0 text-blue-200 flex flex-row items-center font-bold text-xl underline-offset-4 hover:underline"
           href={"https://images.codefoli.com/Resume.pdf"}
         >
           Resume
@@ -23,7 +21,7 @@ const Overview = () => {
 
     return (
       <div
-        className={`${medium} flex flex-row items-center tracking-wide text-[1.2rem] from-blue-200  to-blue-800 bg-gradient-to-r bg-clip-text text-transparent md:text-2xl`}
+        className={`${medium} justify-start items-start flex flex-col xl:flex-row tracking-wide from-blue-200  to-blue-800 bg-gradient-to-r bg-clip-text text-transparent text-2xl`}
       >
         <p>{title1}</p>
         {resume}
