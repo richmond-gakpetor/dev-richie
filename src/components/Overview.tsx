@@ -11,7 +11,7 @@ const Overview = () => {
       <div className="z-20">
         <Link
           target="_blank"
-          className="ml-4 xl:ml-0 text-blue-200 flex flex-row items-center font-bold text-xl underline-offset-4 hover:underline"
+          className="underline md:no-underline ml-4 xl:ml-0 text-blue-200 flex flex-row items-center font-bold text-xl underline-offset-4 hover:underline"
           href={"https://images.codefoli.com/Resume.pdf"}
         >
           Resume
