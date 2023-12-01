@@ -34,7 +34,7 @@ const Overview = () => {
 
   return (
     <Section
-      className="h-screen flex justify-center items-center relative md:justify-start"
+      className="h-screen -mt-24 md:mt-0 flex justify-center items-center relative md:justify-start"
       sectionName="intro"
     >
       <GradientBackground />
