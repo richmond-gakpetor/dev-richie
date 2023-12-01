@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main: #191919;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.grainy {
+  background-image: url(/grain.jpg);
+}
+
+body {
+  background-color: var(--main);
+}
+
+@layer components {
+  .spacing {
+    @apply mt-20 mb-60 md:mb-32 lg:mb-20
+  }
+
+  .paragraph {
+    @apply text-sm md:text-lg max-w-xl leading-6
+  }
+
+  .animation {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .frame {
+    @apply h-[200px] md:h-[330px] object-cover w-full;
+  }
+}
+
+@layer utilities {
+  .animate-width {
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+  }
+
+  .stroked {
+    color: transparent;
+    /* -webkit-text-stroke: 1px rgba(48, 48, 48, 0.489); */
+    -webkit-text-stroke: 1px rgba(37, 47, 45, 0.422);
+    /* -webkit-text-stroke: 1px rgba(50, 57, 51, 0.422); */
+  }
+
+  .heading {
+    font-size: clamp(2.7rem, 10vw, 4rem);
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .bright {
+    opacity: 1 !important;
+  }
+}
