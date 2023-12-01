@@ -24,7 +24,7 @@ body {
   }
 
   .paragraph {
-    @apply text-sm md:text-lg max-w-xl leading-6
+    @apply text-lg max-w-xl leading-6
   }
 
   .animation {

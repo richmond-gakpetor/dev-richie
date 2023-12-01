@@ -15,7 +15,7 @@ const Overview = () => {
       <GradientBackground />
       <article className="flex flex-col gap-2 md:gap-3 ">
         <h1 className={`${black} font-bold text-clamp leading-[1.1] `}>
-          Hi, I&rsquo;m Noah.
+          Hi, I'm Noah.
         </h1>
         <p
           className={`${medium} tracking-wide text-[1.2rem] from-blue-200  to-blue-800 bg-gradient-to-r bg-clip-text text-transparent md:text-2xl`}
