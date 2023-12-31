@@ -37,8 +37,8 @@ projectInfo.set("smartwtf", {
       alt="smartwtf logo"
     />
   ) as JSX.Element,
-  img: "https://images.codefoli.com/alienplanet.png",
-  video: "https://images.codefoli.com/smartwtf.mp4",
+  img: "https://images.codefoli.com/smart.png",
+  video: "https://images.codefoli.com/smartwtfdemo.mp4",
   stack: ["TypeScript", "Next.js", "tRPC", "Clerk", "MySQL", "Tailwind.css"],
   website: { name: "smart.wtf", href: "https://smart.wtf" },
   title: "Smart.wtf",
