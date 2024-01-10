@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Fragment } from "react";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 // Font files can be colocated inside of `app`
 const satoshi = localFont({
@@ -31,7 +32,7 @@ export default function RootLayout({
           <Fragment>{children}</Fragment>
           <Fragment>{modal}</Fragment>
         </SectionContextProvider>
-
+        <Analytics />
         <TailwindIndicator />
       </body>
     </html>
