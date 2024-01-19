@@ -86,7 +86,7 @@ const Projects = () => {
   return (
     <Section sectionName="apps" className="spacing lg:h-[110vh]">
       <article className="flex flex-col gap-24 w-full">
-        <Heading text="Most Popular Apps." />
+        <Heading text="Recent Apps and Tools." />
 
         <ul className="grid grid-cols-1 gap-8 max-w-2xl sm:grid-cols-2">
           {projects}
