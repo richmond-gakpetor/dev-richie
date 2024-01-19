@@ -50,11 +50,13 @@ const ProjectDetails = (props: Props) => {
             />
           )}
 
-          <ProjectMeta
-            icon={<BsBroadcast size={iconSize} />}
-            name="Website"
-            content={currentProject.website}
-          />
+          {currentProject.website && (
+            <ProjectMeta
+              icon={<BsBroadcast size={iconSize} />}
+              name="Website"
+              content={currentProject.website}
+            />
+          )}
         </div>
       </header>
 
