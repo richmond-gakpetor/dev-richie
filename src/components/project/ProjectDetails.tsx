@@ -58,21 +58,17 @@ const ProjectDetails = (props: Props) => {
         </div>
       </header>
 
-      <video
-        className="rounded-lg scale-[90%]"
-        src={currentProject.video}
-        autoPlay={true}
-        loop={true}
-        muted={true}
-      ></video>
+      {currentProject.video && (
+        <video
+          className="rounded-lg scale-[90%]"
+          src={currentProject.video}
+          autoPlay={true}
+          loop={true}
+          muted={true}
+        ></video>
+      )}
 
-      <article className="flex flex-col gap-12 pb-4">
-        <h1 className={`${satoshiBlack.className} text-4xl lowercase`}>
-          {currentProject.title}
-        </h1>
-
-        {paragraphs}
-      </article>
+      <article className="flex flex-col gap-12 pb-4">{paragraphs}</article>
     </section>
   );
 };
