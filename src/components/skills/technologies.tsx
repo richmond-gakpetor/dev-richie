@@ -16,6 +16,7 @@ import { FaFigma, FaSass } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import {
   SiAmazonapigateway,
+  SiAmazonaws,
   SiAmazondynamodb,
   SiAmazonec2,
   SiAmazonrds,
@@ -30,6 +31,7 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiPython,
+  SiPytorch,
   SiRust,
   SiSpring,
   SiTensorflow,
@@ -46,6 +48,7 @@ const reg = 25;
 const sml = 20;
 
 export const tools: Technology[] = [
+  { icon: <SiPytorch />, name: "PyTorch" },
   { icon: <BiLogoReact size={reg} />, name: "React" },
   { icon: <BiLogoTypescript size={reg} />, name: "TypeScript" },
   { icon: <SiNextdotjs size={sml} />, name: "Next.js" },
@@ -57,7 +60,6 @@ export const tools: Technology[] = [
   { icon: <SiMysql size={reg} />, name: "MySQL" },
   { icon: <SiNeo4J size={reg} />, name: "Neo4j" },
   { icon: <SiTrpc size={reg} />, name: "tRPC" },
-  { icon: <SiTensorflow size={reg} />, name: "TensorFlow" },
 ];
 
 export const infrastructure: Technology[] = [
