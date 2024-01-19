@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
+    "lucide": "^0.312.0",
+    "lucide-react": "^0.312.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
