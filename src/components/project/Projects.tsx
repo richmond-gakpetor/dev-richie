@@ -1,19 +1,26 @@
-import Heading from "@/components/Heading";
+import Heading, { black } from "@/components/Heading";
 import Section from "@/components/Section";
-import { satoshiBold } from "@/components/utils/font";
 import projectInfo from "@/components/utils/projectInfo";
 import Image from "next/image";
 import Link from "next/link";
-import { TiArrowRight } from "react-icons/ti";
+import { Dot, Landmark, User2 } from "lucide-react";
+import LinkIcon from "./LinkIcon";
 
 const Projects = () => {
   const projectData = Array.from(projectInfo).map(([_key, value], i) => {
     return {
       id: i,
+      link: value.website.href,
+      progress: value.progress,
       name: value.key,
       img: value.img,
       stack: value.stack,
       title: value.title,
+      domain: value.domain,
+      description: value.description,
+      showIcon: value.prevIcon,
+      icon: value.icon,
+      emoji: value.emoji,
     };
   });
 
@@ -24,36 +31,54 @@ const Projects = () => {
     return (
       <figure
         key={project.id}
-        className={`opacity-60 hover:opacity-100 mb-4 animation max-w-[18.75rem] relative ${masonry}`}
+        className={`mb-4 animation max-w-[18.75rem] relative ${masonry}`}
       >
-        <Link
-          scroll={false}
-          href={`/project/${name}#apps`}
-          id={project.id.toString()}
-        >
-          <Image
-            src={project.img}
-            alt={name}
-            width={300}
-            height={200}
-            className="object-cover rounded-lg sm:w-full cursor-pointer animation hover:border-primary border-2 border-transparent"
-          />
-        </Link>
+        <div>
+          <div className="0 rounded-lg border border-black transition-all p-4 flex flex-col gap-8">
+            <div>
+              <div className="flex md:flex-col xl:flex-row flex-row gap-2 xl:justify-start xl:items-center items-center md:items-start md:justify-center">
+                <div className="flex flex-row items-center gap-2">
+                  {project.showIcon ? (
+                    project.icon
+                  ) : project.emoji ? (
+                    <div>{project.emoji}</div>
+                  ) : null}
+                  <Link
+                    scroll={false}
+                    href={`/project/${name}#apps`}
+                    id={project.id.toString()}
+                    className={`${black} hover:opacity-80 underline line-clamp-1 tracking-wide text-2xl font-bold`}
+                  >
+                    {project.title}
+                  </Link>
+                </div>
 
-        <figcaption className="mt-1">
-          <p
-            className={`${satoshiBold.className} flex justify-between items-center text-base lowercase`}
-          >
-            <span>{project.title}</span>
-            <Link href={`/project/${name}#apps`} scroll={false}>
-              <TiArrowRight size={25} />
-            </Link>
-          </p>
-
-          <p className="text-sm opacity-50 lowercase">
-            {project.stack.join(", ").toLowerCase()}
-          </p>
-        </figcaption>
+                <div className="flex flex-row items-center">
+                  {project.progress === "Building" ? (
+                    <>
+                      <Dot className="text-yellow-400 w-8 h-8" /> Building
+                    </>
+                  ) : project.progress === "Shipped" ? (
+                    <>
+                      <Dot className="text-green-400 w-8 h-8" /> Shipped
+                    </>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="opacity-60">{project.description}</p>
+              <Link
+                href={project.link}
+                target="_blank"
+                className="hover:font-bold hover:underline items-center flex flex-row gap-1"
+              >
+                <LinkIcon />
+                {project.domain}
+              </Link>
+            </div>
+          </div>
+        </div>
       </figure>
     );
   });
