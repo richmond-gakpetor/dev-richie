@@ -1,6 +1,6 @@
 import { satoshiBlack } from "@/components/utils/font";
 
-const black = satoshiBlack.className;
+export const black = satoshiBlack.className;
 interface Props {
   text: string;
 }
