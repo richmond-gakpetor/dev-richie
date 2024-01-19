@@ -10,7 +10,7 @@ const Projects = () => {
   const projectData = Array.from(projectInfo).map(([_key, value], i) => {
     return {
       id: i,
-      link: value.website.href,
+      link: value.website?.href,
       progress: value.progress,
       name: value.key,
       img: value.img,
@@ -18,7 +18,7 @@ const Projects = () => {
       title: value.title,
       domain: value.domain,
       description: value.description,
-      showIcon: value.prevIcon,
+      prevIcon: value.prevIcon,
       icon: value.icon,
       emoji: value.emoji,
     };
@@ -34,15 +34,15 @@ const Projects = () => {
     return (
       <figure
         key={project.id}
-        className={`mb-4 animation sm:max-w-[18.75rem] relative  ${masonry}`}
+        className={`bg-card rounded-lg border border-main mb-4 animation sm:max-w-[18.75rem] relative  ${masonry}`}
       >
         <div>
-          <div className="0 rounded-lg border border-black transition-all p-4 flex flex-col gap-8">
+          <div className="0 rounded-lg transition-all p-4 flex flex-col gap-8">
             <div>
               <div className="flex flex-col xl:flex-row gap-2 xl:justify-start xl:items-center items-start justify-center">
                 <div className="flex flex-row items-center gap-2">
-                  {project.showIcon ? (
-                    project.icon
+                  {project.prevIcon ? (
+                    project.prevIcon
                   ) : project.emoji ? (
                     <div>{project.emoji}</div>
                   ) : null}
@@ -71,14 +71,16 @@ const Projects = () => {
             </div>
             <div className="flex flex-col gap-2">
               <p className="opacity-60">{project.description}</p>
-              <Link
-                href={project.link}
-                target="_blank"
-                className="hover:font-bold hover:underline items-center flex flex-row gap-1"
-              >
-                <LinkIcon />
-                {project.domain}
-              </Link>
+              {project.link && (
+                <Link
+                  href={project.link}
+                  target="_blank"
+                  className="hover:font-bold hover:underline items-center flex flex-row gap-1"
+                >
+                  <LinkIcon />
+                  {project.domain}
+                </Link>
+              )}
             </div>
           </div>
         </div>
