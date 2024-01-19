@@ -11,10 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.grainy {
-  background-image: url(/noise.png);
-  background-blend-mode: soft-light;
-}
 
 body {
   background-color: var(--main);

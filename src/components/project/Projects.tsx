@@ -34,7 +34,7 @@ const Projects = () => {
     return (
       <figure
         key={project.id}
-        className={`bg-card rounded-lg border border-main mb-4 animation sm:max-w-[18.75rem] relative  ${masonry}`}
+        className={`border border-[#ffffff36] bg-card rounded-lg mb-4 animation sm:max-w-[18.75rem] relative  ${masonry}`}
       >
         <div>
           <div className="0 rounded-lg transition-all p-4 flex flex-col gap-8">
