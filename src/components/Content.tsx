@@ -5,6 +5,7 @@ import Overview from "@/components/Overview";
 import Projects from "@/components/project/Projects";
 import Skills from "@/components/skills/Skills";
 import Container from "@/components/ui/Container";
+import ContactLinks from "./ContactLinks";
 
 const Content = () => {
   return (
@@ -12,6 +13,7 @@ const Content = () => {
       <div className="lg:hidden">
         <Navbar />
       </div>
+      <ContactLinks className="xl:fixed absolute right-16 top-8" />
 
       <Overview />
       <About />

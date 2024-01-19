@@ -5,14 +5,8 @@ import { satoshiMedium } from "@/components/utils/font";
 import Link from "next/link";
 import { IoChevronBack } from "react-icons/io5";
 
-interface Props {
-  params: { id: string };
-}
-// page when you refesh
-const page = (props: Props) => {
-  const {
-    params: { id },
-  } = props;
+const page = ({ params: { id } }: { params: { id: string } }) => {
+  console.log(id);
 
   return (
     <>
