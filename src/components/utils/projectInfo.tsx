@@ -10,7 +10,7 @@ type ProjectInfo = {
   name: string;
   prevIcon?: JSX.Element;
   description: string;
-  icon: JSX.Element;
+  icon?: JSX.Element;
   img: string;
   domain?: string;
   stack: string[];
@@ -22,6 +22,7 @@ type ProjectInfo = {
   paragraphs: {
     [key: string]: string;
   };
+  tags?: string[];
   progress: "Building" | "Shipped";
 };
 
@@ -34,6 +35,7 @@ projectInfo.set("smartwtf", {
   name: "Smart.wtf",
   progress: "Building",
   domain: "smart.wtf",
+  tags: ["Learning Platform", "AI"],
   icon: (
     <Image
       width={100}
@@ -58,15 +60,16 @@ projectInfo.set("smartwtf", {
   website: { name: "smart.wtf", href: "https://smart.wtf" },
   title: "Smart.wtf",
   paragraphs: {
-    "1": "Smart.wtf is an online learning platform that combines AI with creative storytelling to make learning fun and engaging.",
+    "1": "Smart.wtf is an online learning platform that combines AI with lesson interactivity to deliver a memorable and educational experience to the user.",
 
-    "2": " The platform is designed to help students learn and retain information more effectively by using a combination of humor, interactivity and storytelling.",
+    "2": " The platform is designed to help students learn and retain information more effectively by using a combination of humor, interactivity and absurdity to boost retention and memorability.",
   },
 });
 
 projectInfo.set("deepstar", {
   key: "deepstar",
   name: "Deep Star",
+  tags: ["Deep Learning Framework"],
   prevIcon: (
     <Image width={32} height={32} src={"/deepstar.png"} alt="deepstar logo" />
   ),
@@ -98,6 +101,7 @@ projectInfo.set("codefoli", {
   key: "codefoli",
   name: "Codefoli",
   domain: "codefoli.com",
+  tags: ["Website Builder"],
   emoji: "☁️",
   icon: (
     <Image
@@ -122,6 +126,78 @@ projectInfo.set("codefoli", {
   title: "Codefoli",
   paragraphs: {
     "1": "Building portfolio websites for developers who have better things to do. Codefoli is a platform that allows developers to build and deploy a portfolio website in minutes. Whether you are coming in with your own domain, or would just like to deploy through a subdomain (e.g. elonmusk.codefoli.com), our infrastructure is efficient enough to offer this for $0!.",
+  },
+});
+
+projectInfo.set("investingyellow", {
+  key: "investingyellow",
+  name: "Investing Yellow",
+  domain: "investingyellow.com",
+  tags: ["Finance", "AI"],
+  icon: (
+    <Image
+      width={100}
+      height={100}
+      className="my-3 rounded-lg border-opacity-50"
+      src={"/investingyellow.png"}
+      alt="mr burns"
+    />
+  ),
+  video: "/investingyellow.mp4",
+  prevIcon: (
+    <Image
+      width={32}
+      height={32}
+      className="my-3 rounded-lg border-opacity-50"
+      src={"/investingyellow.png"}
+      alt="mr burns"
+    />
+  ),
+  description:
+    "Hear about your finances through the lens of your favorite characters",
+  progress: "Shipped",
+  img: "/mrburns.png",
+  stack: ["OpenAI", "React", "TypeScript", "Tailwind.css"],
+  source: {
+    name: "noahgsolomon/InvestingYellow",
+    href: "https://github.com/noahgsolomon/InvestingYellow",
+  },
+  website: { name: "Investing Yellow", href: "https://investingyellow.com" },
+  title: "I.Y.",
+  paragraphs: {
+    "1": "Financial app that connects to bank and investment accounts, like Wells Fargo or Robinhood, using Plaid. It provides a straightforward display of spending and investments with a donut graph and a transaction list. The app uses AI to analyze financial data, offering personalized investment advice and categorizing users based on their spending habits.",
+    "2": "The app features a social platform for financial discussions, using characters like Ned Flanders and Lisa Simpson for interaction. It includes a leaderboard ranking users based on their financial management, as assessed by the app’s AI. This encourages users to improve their financial standing, aligning with the goal of moving towards a financially secure future.",
+  },
+});
+
+projectInfo.set("graphzila", {
+  key: "graphzila",
+  name: "Graphzila",
+  domain: "graphzila.com",
+  tags: ["Knowledge Graph", "AI"],
+  icon: (
+    <Image
+      width={100}
+      height={100}
+      className="my-3 rounded-lg border-opacity-50"
+      src={"/graphzila.png"}
+      alt="graphzila"
+    />
+  ),
+  video: "/graphzila.mp4",
+  emoji: "🔥",
+  description: "Learn about your favorite topics through knowledge graphs.",
+  progress: "Shipped",
+  img: "/graphzila.png",
+  stack: ["OpenAI", "React", "TypeScript", "Tailwind.css"],
+  source: {
+    name: "noahgsolomon/Graphzila",
+    href: "https://github.com/noahgsolomon/Graphzila",
+  },
+  website: { name: "Graphzila", href: "https://graphzila.com" },
+  title: "Graphzila",
+  paragraphs: {
+    "1": "Knowledge graph generator powered by OpenAI's GPT-4. Takes an input of the concept/topic, and spits out a knowledge graph with edges specifying relations and nodes specifying different topics related to the searched topic, or a sub-topic.",
   },
 });
 
