@@ -21,6 +21,7 @@ const Projects = () => {
       prevIcon: value.prevIcon,
       icon: value.icon,
       emoji: value.emoji,
+      tags: value.tags,
     };
   });
 
@@ -71,11 +72,18 @@ const Projects = () => {
             </div>
             <div className="flex flex-col gap-2">
               <p className="opacity-60">{project.description}</p>
+              <div className="flex flex-wrap gap-1">
+                {project.tags?.map((tag) => (
+                  <div className="transition-all hover:opacity-80 bg-secondary/20 rounded-lg px-2 py-1 text-xs">
+                    #{tag}
+                  </div>
+                ))}
+              </div>
               {project.link && (
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="hover:font-bold hover:underline items-center flex flex-row gap-1"
+                  className="text-base hover:font-bold hover:underline items-center flex flex-row gap-1"
                 >
                   <LinkIcon />
                   {project.domain}
