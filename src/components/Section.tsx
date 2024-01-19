@@ -42,7 +42,7 @@ const Section = (props: Props) => {
   return (
     <section
       ref={ref}
-      className={`${className} w-full flex items-center md:h-screen`}
+      className={`${className} w-full flex items-center lg:h-screen`}
       id={`${sectionDetails.link}`}
     >
       {children}

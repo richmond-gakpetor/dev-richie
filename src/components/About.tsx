@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Section
       sectionName="about"
-      className="relative spacing md:h-[120vh] lg:h-screen"
+      className="relative spacing lg:h-[120vh] xl:h-screen"
     >
       <article className=" flex flex-col gap-16">
         <Heading text="about me." />

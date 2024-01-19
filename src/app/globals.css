@@ -20,7 +20,7 @@ body {
 
 @layer components {
   .spacing {
-    @apply mt-20 mb-60 md:mb-32 lg:mb-20
+    @apply mt-20 mb-60 lg:mb-32 xl:mb-20
   }
 
   .paragraph {
@@ -32,7 +32,7 @@ body {
   }
 
   .frame {
-    @apply h-[200px] md:h-[330px] object-cover w-full;
+    @apply h-[200px] lg:h-[330px] object-cover w-full;
   }
 }
 

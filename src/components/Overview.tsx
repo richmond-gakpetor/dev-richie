@@ -12,7 +12,7 @@ const Overview = () => {
       <div className="z-20">
         <Link
           target="_blank"
-          className="underline md:no-underline ml-4 xl:ml-0 text-blue-200 flex flex-row items-center font-bold text-xl underline-offset-4 hover:underline"
+          className="underline lg:no-underline ml-4 xl:ml-0 text-blue-200 flex flex-row items-center font-bold text-xl underline-offset-4 hover:underline"
           href={"https://images.codefoli.com/Resume.pdf"}
         >
           Resume
@@ -35,11 +35,11 @@ const Overview = () => {
 
   return (
     <Section
-      className="h-screen -mt-24 md:mt-0 flex justify-center items-center relative md:justify-start"
+      className="h-screen -mt-24 lg:mt-0 flex justify-center items-center relative lg:justify-start"
       sectionName="intro"
     >
       <GradientBackground />
-      <article className="flex flex-col gap-2 md:gap-3 ">
+      <article className="flex flex-col gap-2 lg:gap-3 ">
         <h1 className={`${black} font-bold text-clamp leading-[1.1] `}>
           Hi, I'm Noah.
         </h1>

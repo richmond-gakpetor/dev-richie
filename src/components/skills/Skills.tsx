@@ -44,11 +44,11 @@ const Skills = () => {
           <p className={`opacity-20 text-lg`}>&#60;&#47;p&#62;</p>
 
           <p className=" mt-10 text-2xl font-bold">Tools:</p>
-          <ul className="mt-2 grid grid-cols-2 gap-y-2 gap-x-8 sm:grid-cols-3 sm:gap-x-14 lg:gap-x-10 lg:grid-cols-4">
+          <ul className="mt-2 grid grid-cols-2 gap-y-2 gap-x-8 sm:grid-cols-3 sm:gap-x-14 xl:gap-x-10 xl:grid-cols-4">
             {toolSkills}
           </ul>
           <p className="mt-10 text-2xl font-bold">Infrastructure:</p>
-          <ul className="mt-2 grid grid-cols-2 gap-y-2 gap-x-8 sm:grid-cols-3 sm:gap-x-14 lg:gap-x-10 lg:grid-cols-4">
+          <ul className="mt-2 grid grid-cols-2 gap-y-2 gap-x-8 sm:grid-cols-3 sm:gap-x-14 xl:gap-x-10 xl:grid-cols-4">
             {infrastructureSkills}
           </ul>
         </div>

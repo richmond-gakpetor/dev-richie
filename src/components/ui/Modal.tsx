@@ -75,20 +75,20 @@ export default function Modal({ children }: { children: React.ReactNode }) {
           {!isExpanded ? (
             <PiArrowsOutSimpleFill
               size={20}
-              className="cursor-pointer hidden lg:block"
+              className="cursor-pointer hidden xl:block"
               onClick={expandModal}
             />
           ) : (
             <PiArrowsInSimpleFill
               size={20}
-              className="cursor-pointer hidden lg:block"
+              className="cursor-pointer hidden xl:block"
               onClick={expandModal}
             />
           )}
 
           <ContactLinks className="ml-auto" />
         </header>
-        <Container className="max-w-2xl lg:mx-auto">{children}</Container>
+        <Container className="max-w-2xl xl:mx-auto">{children}</Container>
       </div>
     </div>
   );

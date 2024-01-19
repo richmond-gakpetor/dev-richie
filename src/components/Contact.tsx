@@ -56,7 +56,7 @@ const Contact = () => {
   });
 
   return (
-    <Section sectionName="contact" className="spacing pb-28 md:pb-0 ">
+    <Section sectionName="contact" className="spacing pb-28 lg:pb-0 ">
       <article className="flex flex-col gap-16">
         <Heading text="contact." />
 

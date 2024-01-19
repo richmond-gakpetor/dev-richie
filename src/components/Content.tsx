@@ -9,7 +9,7 @@ import Container from "@/components/ui/Container";
 const Content = () => {
   return (
     <Container>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Navbar />
       </div>
 

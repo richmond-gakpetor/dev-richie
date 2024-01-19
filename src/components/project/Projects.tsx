@@ -25,18 +25,21 @@ const Projects = () => {
   });
 
   const projects = projectData.map((project) => {
-    const masonry = project.id % 2 !== 0 ? "ml-auto sm:ml-0 sm:top-12 " : "";
+    const masonry =
+      project.id % 2 !== 0
+        ? "flex justify-center w-full sm:ml-auto sm:ml-0 sm:top-12 "
+        : "";
     const name = project.name.toLowerCase();
 
     return (
       <figure
         key={project.id}
-        className={`mb-4 animation max-w-[18.75rem] relative ${masonry}`}
+        className={`mb-4 animation sm:max-w-[18.75rem] relative  ${masonry}`}
       >
         <div>
           <div className="0 rounded-lg border border-black transition-all p-4 flex flex-col gap-8">
             <div>
-              <div className="flex md:flex-col xl:flex-row flex-row gap-2 xl:justify-start xl:items-center items-center md:items-start md:justify-center">
+              <div className="flex flex-col xl:flex-row gap-2 xl:justify-start xl:items-center items-start justify-center">
                 <div className="flex flex-row items-center gap-2">
                   {project.showIcon ? (
                     project.icon
@@ -84,7 +87,7 @@ const Projects = () => {
   });
 
   return (
-    <Section sectionName="apps" className="spacing lg:h-[110vh]">
+    <Section sectionName="apps" className="spacing xl:h-[110vh]">
       <article className="flex flex-col gap-24 w-full">
         <Heading text="Recent Apps and Tools." />
 
