@@ -1,6 +1,7 @@
 import Section from "@/components/Section";
 import GradientBackground from "@/components/ui/GradientBackground";
 import { satoshiBlack, satoshiMedium } from "@/components/utils/font";
+import Image from "next/image";
 import Link from "next/link";
 
 const Overview = () => {
@@ -42,26 +43,15 @@ const Overview = () => {
         <h1 className={`${black} font-bold text-clamp leading-[1.1] `}>
           Hi, I'm Noah.
         </h1>
-
         {title()}
-
         <p className="paragraph">
-          Fullstack developer specializing in cloud architecture and
-          user-centric solutions. Combining technical acumen with innovative
-          design, I focus on integrating robust cloud infrastructure with
-          efficient, intuitive applications.
+          Fullstack developer with a focus on cloud architecture and a strong
+          interest in machine learning, dedicated to building scalable,
+          intelligent applications.
         </p>
-
-        <p className="paragraph leading-6 mt-2">
+        <p className="opacity-50 paragraph leading-6 mt-2">
           <i>What I cannot create, I do not understand. – Richard Feynman</i>
         </p>
-
-        {/* <p className="paragraph leading-6 ">
-            I don&apos;t know who you are. I don&apos;t know what you want. If you&apos;re looking for ordinary websites, I can tell you I&apos;m not your developer.
-              <br></br> <br></br>
-            But what I do have are a very particular set of skills—skills I have acquired over some time. Skills that make me a dream for creating stunning, user-friendly frontend interfaces.
-             
-          </p> */}
       </article>
     </Section>
   );
