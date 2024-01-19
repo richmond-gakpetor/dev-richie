@@ -1,9 +1,8 @@
 import Heading, { black } from "@/components/Heading";
 import Section from "@/components/Section";
 import projectInfo from "@/components/utils/projectInfo";
-import Image from "next/image";
 import Link from "next/link";
-import { Dot, Landmark, User2 } from "lucide-react";
+import { Dot } from "lucide-react";
 import LinkIcon from "./LinkIcon";
 
 const Projects = () => {
