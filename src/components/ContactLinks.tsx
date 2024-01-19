@@ -10,7 +10,7 @@ const size = 22;
 const platforms = [
   {
     icon: <AiOutlineGithub size={size} />,
-    link: "https://github.com/noahsgolomon",
+    link: "https://github.com/noahgsolomon",
   },
   {
     icon: <AiOutlineTwitter size={size} />,
