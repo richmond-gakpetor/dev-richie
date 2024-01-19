@@ -15,6 +15,8 @@ const config: Config = {
         primary: "#fff",
         secondary: "#a2a2a3",
         light: "rgba(255, 255, 255, 0.10)",
+        card: "var(--card)",
+        main: "var(--main)",
       },
     },
   },
