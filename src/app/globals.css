@@ -4,6 +4,7 @@
 
 :root {
   --main: #191919;
+  --card: #272626d4;
 }
 
 html {
@@ -11,7 +12,8 @@ html {
 }
 
 .grainy {
-  background-image: url(/grain.jpg);
+  background-image: url(/noise.png);
+  background-blend-mode: soft-light;
 }
 
 body {
