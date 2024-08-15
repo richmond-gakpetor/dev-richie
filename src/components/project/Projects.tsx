@@ -65,7 +65,11 @@ const Projects = () => {
                     <>
                       <Dot className="text-green-400 w-8 h-8" /> Shipped
                     </>
-                  ) : null}
+                  ) : project.progress === "Beta" ? (
+                    <>
+                      <Dot className="text-blue-400 w-8 h-8" /> Beta
+                    </>
+                  )  :  null}
                 </div>
               </div>
             </div>
@@ -98,7 +102,7 @@ const Projects = () => {
   return (
     <Section sectionName="apps" className="spacing xl:h-[110vh]">
       <article className="flex flex-col gap-24 w-full">
-        <Heading text="Recent Apps and Tools." />
+        <Heading text="Recent Projects" />
 
         <ul className="grid grid-cols-1 gap-8 max-w-2xl sm:grid-cols-2">
           {projects}

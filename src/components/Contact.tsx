@@ -14,23 +14,23 @@ const size = 25;
 const platforms = [
   {
     icon: <AiOutlineGithub size={size} />,
-    username: "noahgsolomon",
-    link: "https://github.com/noahgsolomon",
+    username: "dev-richie",
+    link: "https://github.com/richmond-gakpetor",
   },
   {
     icon: <AiOutlineTwitter size={size} />,
-    username: "@noahgsolomon",
-    link: "https://twitter.com/noahgsolomon",
+    username: "@_vision_richie",
+    link: "https://twitter.com/_vision_richie",
   },
   {
     icon: <HiMail size={size} />,
-    username: "noahsolomon2003@gmail.com",
-    link: "mailto:noahsolomon2003@gmail.com",
+    username: "gakpetorr01@gmail.com",
+    link: "mailto:gakpetorr01@gmail.com",
   },
   {
     icon: <AiFillLinkedin size={size} />,
-    username: "Noah Solomon",
-    link: "https://www.linkedin.com/in/noahgsolomon/",
+    username: "Richmond Gakpetor",
+    link: "https://www.linkedin.com/in/richmond-gakpetor/",
   },
 ];
 
@@ -63,8 +63,8 @@ const Contact = () => {
         <div>
           <p className={`opacity-20 text-lg`}>&#60;p&#62;</p>
           <p className="paragraph ml-4">
-            If you would like to get in touch, reach out to me on any one of
-            these platforms.
+            I'm always open to new opportunities and collaborations. Feel free
+            to reach out to me on any of the platforms below.
           </p>
           <p className={`opacity-20 text-lg`}>&#60;&#47;p&#62;</p>
         </div>

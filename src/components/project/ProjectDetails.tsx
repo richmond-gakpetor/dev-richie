@@ -15,7 +15,7 @@ const ProjectDetails = (props: Props) => {
   const currentProject = projectInfo.get(project)!;
   const iconSize = 25;
 
-  const paragraphs = Object.values(currentProject.paragraphs).map(
+  const paragraphs = Object.values(currentProject?.paragraphs).map(
     (paragraph, index) => {
       return (
         <p className="paragraph" key={index}>

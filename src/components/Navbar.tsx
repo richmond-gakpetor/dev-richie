@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="h-[10vh] flex items-center">
+    <nav className="h-[10vh] flex items-center ">
       <Link
         href="#intro"
-        className={`${satoshiBold.className} text-2xl tracking-[4px]`}
+        className={`${satoshiBold.className} text-2xl tracking-[4px] italic`}
       >
-        //n
+        {"<dR/>"}
       </Link>
     </nav>
   );

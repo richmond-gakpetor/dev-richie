@@ -48,18 +48,21 @@ const reg = 25;
 const sml = 20;
 
 export const tools: Technology[] = [
-  { icon: <SiPytorch />, name: "PyTorch" },
+  // { icon: <SiPytorch />, name: "PyTorch" },
   { icon: <BiLogoReact size={reg} />, name: "React" },
   { icon: <BiLogoTypescript size={reg} />, name: "TypeScript" },
   { icon: <SiNextdotjs size={sml} />, name: "Next.js" },
   { icon: <BiLogoNodejs size={reg} />, name: "Node.js" },
-  { icon: <SiSpring size={reg} />, name: "Spring" },
+  { icon: <SiExpress size={reg} />, name: "Express" },
+  { icon: <BiLogoGraphql size={reg} />, name: "GraphQL" },
+  { icon: <BiLogoMongodb size={reg} />, name: "MongoDB" },
+  // { icon: <SiSpring size={reg} />, name: "Spring" },
   { icon: <SiPython size={reg} />, name: "Python" },
-  { icon: <SiRust size={reg} />, name: "Rust" },
+  // { icon: <SiRust size={reg} />, name: "Rust" },
   { icon: <SiPostgresql size={reg} />, name: "PostgreSQL" },
-  { icon: <SiMysql size={reg} />, name: "MySQL" },
-  { icon: <SiNeo4J size={reg} />, name: "Neo4j" },
-  { icon: <SiTrpc size={reg} />, name: "tRPC" },
+  // { icon: <SiMysql size={reg} />, name: "MySQL" },
+  // { icon: <SiNeo4J size={reg} />, name: "Neo4j" },
+  // { icon: <SiTrpc size={reg} />, name: "tRPC" },
 ];
 
 export const infrastructure: Technology[] = [
@@ -68,7 +71,7 @@ export const infrastructure: Technology[] = [
   { icon: <SiAmazonapigateway size={reg} />, name: "API Gateway" },
   { icon: <SiAmazons3 size={reg} />, name: "S3" },
   { icon: <SiAmazonroute53 size={reg} />, name: "Route 53" },
-  { icon: <SiAmazonsqs size={reg} />, name: "SQS" },
+  // { icon: <SiAmazonsqs size={reg} />, name: "SQS" },
   { icon: <SiAmazondynamodb size={reg} />, name: "DynamoDB" },
   { icon: <SiAmazonrds size={reg} />, name: "RDS" },
   { icon: <SiAwsamplify size={reg} />, name: "Amplify" },

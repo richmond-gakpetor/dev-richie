@@ -41,16 +41,15 @@ const Overview = () => {
       <GradientBackground />
       <article className="flex flex-col gap-2 lg:gap-3 ">
         <h1 className={`${black} font-bold text-clamp leading-[1.1] `}>
-          Hi, I'm Noah.
+          Hi, I'm Richmond.
         </h1>
         {title()}
         <p className="paragraph">
-          Fullstack developer with a focus on cloud architecture and a strong
-          interest in machine learning, dedicated to building scalable,
-          intelligent applications.
+          I'm a software engineer with a passion for creating and building things. I'm a self-taught developer with a strong foundation in web development and a keen interest in mobile development. I'm always looking for opportunities to learn and grow as a developer.
         </p>
         <p className="opacity-50 paragraph leading-6 mt-2">
-          <i>What I cannot create, I do not understand. – Richard Feynman</i>
+          <i>If you can't explain it simply, then you don't understand it well enough. - Albert Einstein
+          </i>
         </p>
       </article>
     </Section>

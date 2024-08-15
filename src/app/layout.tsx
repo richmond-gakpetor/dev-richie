@@ -13,9 +13,9 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Noah Solomon | Software Engineer",
+  title: "Dev Richie | Software Engineer",
   description:
-    "Fullstack developer specializing in cloud architecture and user-centric solutions. Combining technical acumen with innovative design, I focus on integrating robust cloud infrastructure with efficient, intuitive applications.",
+    "Fullstack developer specializing in cloud architecture and user-centric solutions. Combining technical expertise with innovative design, I create robust cloud infrastructures and intuitive, efficient applications.",
 };
 
 export default function RootLayout({
