@@ -28,15 +28,13 @@ const About = () => {
           <p className={`opacity-20 text-lg`}>&#60;p&#62;</p>
           <div className="ml-4">
             <p className="paragraph mt-2">
-              🔧 - I now have an app in the PlayStore. It's that Netflix alternative you wish you had.
-              The app is called <a className="text-red-500 underline" href="https://play.google.com/store/apps/details?id=com.hyperpay.rovermanapp">Roverman Tickets</a>.
-              Version 2.0 is in the works and I'm excited to share it with you.
+              🔧 - I built the entire UI for RoverApp from scratch, integrated APIs, and deployed the app to production. This platform, used in Ghana, now serves over 6,000 users across iOS and Android.
             </p>
             <p className="paragraph mt-8">
-              ☁️ - Quite the cloud enthusiast, I have been prepping for the AWS Solutions Architect certification and have been working on a few projects to solidify my understanding of the cloud.
+              ☁️ - I'm actively expanding my expertise in cloud architecture and generative AI, focusing on mastering these areas to drive innovation.
             </p>
             <p className="paragraph mt-8">
-              💡 - I truly believe in the power of innovation to change the future. That is my ethos in my work--build the future you want to see with technology.
+            🎥 - I recently began my tech <a href="https://www.youtube.com/@TechTrafficControl" className="text-red-500 underline">YouTube</a> journey, sharing insights and practical tips to help others transition into the tech industry.
             </p>
           </div>
           <p className={`opacity-20 text-lg`}>&#60;&#47;p&#62;</p>

@@ -1,9 +1,12 @@
+"use client"
+
 import ProjectMeta from "@/components/project/ProjectMeta";
 import { satoshiBlack } from "@/components/utils/font";
 import projectInfo from "@/components/utils/projectInfo";
 import { AiFillGithub } from "react-icons/ai";
 import { BsBroadcast } from "react-icons/bs";
 import { HiOutlineCode } from "react-icons/hi";
+import ImageGallery from "./ImageGallery"; 
 
 interface Props {
   project: string;
@@ -53,12 +56,18 @@ const ProjectDetails = (props: Props) => {
           {currentProject.website && (
             <ProjectMeta
               icon={<BsBroadcast size={iconSize} />}
-              name="Website"
+              name="Link"
               content={currentProject.website}
             />
           )}
         </div>
       </header>
+
+      {/* display `images` if present in the ImageGallery component */}
+      {currentProject.gallery && (
+        <ImageGallery gallery={currentProject.gallery} />
+      )}
+
 
       {currentProject.video && (
         <video

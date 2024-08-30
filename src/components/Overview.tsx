@@ -40,7 +40,7 @@ const Overview = () => {
     >
       <GradientBackground />
       <article className="flex flex-col gap-2 lg:gap-3 ">
-        <h1 className={`${black} font-bold text-clamp leading-[1.1] `}>
+        <h1 className={`${black} font-bold md:text-clamp leading-[1.1] text-4xl`}>
           Hi, I'm Richmond.
         </h1>
         {title()}
