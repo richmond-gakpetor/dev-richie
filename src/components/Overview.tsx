@@ -1,7 +1,6 @@
 import Section from "@/components/Section";
 import GradientBackground from "@/components/ui/GradientBackground";
 import { satoshiBlack, satoshiMedium } from "@/components/utils/font";
-import Image from "next/image";
 import Link from "next/link";
 
 const Overview = () => {
@@ -13,7 +12,7 @@ const Overview = () => {
         <Link
           target="_blank"
           className="underline lg:no-underline ml-4 xl:ml-0 text-blue-200 flex flex-row items-center font-bold text-xl underline-offset-4 hover:underline"
-          href={"https://images.codefoli.com/Resume.pdf"}
+          href={"/resume.pdf"}
         >
           Resume
         </Link>
