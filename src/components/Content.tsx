@@ -6,6 +6,7 @@ import Projects from "@/components/project/Projects";
 import Skills from "@/components/skills/Skills";
 import Container from "@/components/ui/Container";
 import ContactLinks from "./ContactLinks";
+import Books from "./Books";
 
 const Content = () => {
   return (
@@ -19,6 +20,7 @@ const Content = () => {
       <About />
       <Skills />
       <Projects />
+      <Books />
       <Contact />
     </Container>
   );

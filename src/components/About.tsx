@@ -2,6 +2,7 @@ import Heading, { black } from "@/components/Heading";
 import Section from "@/components/Section";
 import { satoshiMedium } from "@/components/utils/font";
 import { Fragment } from "react";
+import { BsYoutube } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -28,13 +29,22 @@ const About = () => {
           <p className={`opacity-20 text-lg`}>&#60;p&#62;</p>
           <div className="ml-4">
             <p className="paragraph mt-2">
-              🔧 - I built the entire UI for RoverApp from scratch, integrated APIs, and deployed the app to production. This platform, used in Ghana, now serves over 6,000 users across iOS and Android.
+              🔧 - I built the entire UI for RoverApp from scratch, integrated
+              APIs, and deployed the app to production. This app now serves over
+              7,000 users across iOS and Android.
             </p>
             <p className="paragraph mt-8">
-              ☁️ - I'm actively expanding my expertise in cloud architecture and generative AI, focusing on mastering these areas to drive innovation.
+              ☁️ - I'm actively expanding my expertise in cloud architecture and
+              generative AI, focusing on mastering these areas to drive
+              innovation.
             </p>
             <p className="paragraph mt-8">
-            🎥 - I recently began my tech <a href="https://www.youtube.com/@TechTrafficControl" className="text-red-500 underline">YouTube</a> journey, sharing insights and practical tips to help others transition into the tech industry.
+              🎥 - I recently began my tech{" "}
+              <a href="https://www.youtube.com/@TechTrafficControl" >
+                <span><BsYoutube className="inline text-red-500"/> YouTube </span>
+              </a>
+              journey, sharing insights and practical tips to help others
+              transition into the tech industry.
             </p>
           </div>
           <p className={`opacity-20 text-lg`}>&#60;&#47;p&#62;</p>

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { IoChevronBack } from "react-icons/io5";
 
 const page = ({ params: { id } }: { params: { id: string } }) => {
-  console.log(id);
+  // console.log(id);
 
   return (
     <>

@@ -20,7 +20,12 @@ const GradientBackground = (props: Props) => {
     <div
       className={`-z-10 absolute top-[50%] left-[50%] w-full h-[70vh] flex flex-col items-center justify-center transform -translate-x-1/2 -translate-y-1/2`}
     >
-      <Image src={"/dev-richie.png"} objectFit="cover" layout="fill" alt={"profile-pic"} className="-z-10 opacity-10 m-6 w-full h-full sm:w-3/4 sm:h-3/4 md:w-2/3 md:h-2/3 lg:w-full lg:h-full"
+      <Image
+        src={"/dev-richie.png"}
+        objectFit="cover"
+        layout="fill"
+        alt={"profile-pic"}
+        className={`hidden sm:block -z-10 opacity-10 m-6 w-full h-full sm:w-1/5 sm:h-1/5 md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5`}
       />
 
       <div

@@ -6,7 +6,6 @@ import { Fragment } from "react";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-// Font files can be colocated inside of `app`
 const satoshi = localFont({
   src: "./satoshi/Satoshi-Light.otf",
   display: "swap",
@@ -15,7 +14,7 @@ const satoshi = localFont({
 export const metadata: Metadata = {
   title: "Dev Richie | Software Engineer",
   description:
-    "Fullstack developer specializing in cloud architecture and user-centric solutions. Combining technical expertise with innovative design, I create robust cloud infrastructures and intuitive, efficient applications.",
+    "Full-stack developer specializing in crafting user-friendly and efficient web and mobile applications.",
 };
 
 export default function RootLayout({
