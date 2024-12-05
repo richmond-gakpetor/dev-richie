@@ -31,12 +31,12 @@ const currentlyReading: BookType[] = [
     progress: 25,
     genre: ["Database", "AWS","NoSQL"],
   },
-  {
-    title: "The Pragmatic Programmer",
-    author: "David Thomas, Andrew Hunt",
-    progress: 0,
-    genre: ["Programming", "Software Engineering"],
-  },
+  // {
+  //   title: "The Pragmatic Programmer",
+  //   author: "David Thomas, Andrew Hunt",
+  //   progress: 0,
+  //   genre: ["Programming", "Software Engineering"],
+  // },
   
 ];
 
@@ -95,7 +95,7 @@ const Books = () => {
   return (
     <Section sectionName="books" className="spacing pb-28 lg:pb-0">
       <article className="flex flex-col gap-16">
-        <Heading text="books." />
+        <Heading text="#books." />
 
         <div>
           <p className="opacity-20 text-lg">&#60;p&#62;</p>

@@ -23,9 +23,11 @@ const GradientBackground = (props: Props) => {
       <Image
         src={"/dev-richie.png"}
         objectFit="cover"
-        layout="fill"
-        alt={"profile-pic"}
+        fill={true}
+        quality={100}
+        alt={"dev-richie-profile-pic"}
         className={`hidden sm:block -z-10 opacity-10 m-6 w-full h-full sm:w-1/5 sm:h-1/5 md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5`}
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
       />
 
       <div

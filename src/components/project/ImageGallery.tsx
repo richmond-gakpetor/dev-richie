@@ -27,7 +27,10 @@ const ImageGallery = ({ gallery }: { gallery: string[] }) => {
                                 alt={`Gallery image ${index + 1}`}
                                 width={300}
                                 height={300}
+                                quality={100}
+                                priority={true}
                                 className="w-full h-auto object-cover"
+                                sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw'
                             />
                         </div>
                     ))}
