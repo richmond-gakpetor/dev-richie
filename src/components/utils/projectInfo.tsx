@@ -134,50 +134,9 @@ projectInfo.set("dashboard", {
   title: "Dashboard",
   paragraphs: {
     "1": "The dashboard is a client-facing web application that provides users with access to customer data analytics and other management tools. The app is built using React, Ant Design, and Tailwind.css, and is designed to be user-friendly and easy to navigate. The dashboard features a clean and modern interface, with interactive tables and graphs that allow users to visualize their data in real-time.",
-    
+
   },
 });
-
-// projectInfo.set("bank", {
-//   key: "bankapp",
-//   name: "My Bank",
-//   domain: "investingyellow.com",
-//   tags: ["Banking", "Fintech"],
-//   icon: (
-//     <Image
-//       width={100}
-//       height={100}
-//       className="my-3 rounded-lg border-opacity-50"
-//       src={"/investingyellow.png"}
-//       alt="mr burns"
-//     />
-//   ),
-//   video: "/investingyellow.mp4",
-//   prevIcon: (
-//     <Image
-//       width={32}
-//       height={32}
-//       className="my-3 rounded-lg border-opacity-50"
-//       src={"/investingyellow.png"}
-//       alt="mr burns"
-//     />
-//   ),
-//   description:
-//     "Hear about your finances through the lens of your favorite characters",
-//   progress: "Building",
-//   img: "/mrburns.png",
-//   stack: ["React Native", "TypeScript", "Expo Router", "NativeWind"],
-//   source: {
-//     name: "noahgsolomon/InvestingYellow",
-//     href: "https://github.com/noahgsolomon/InvestingYellow",
-//   },
-//   website: { name: "Investing Yellow", href: "https://investingyellow.com" },
-//   title: "MyBank",
-//   paragraphs: {
-//     "1": "Financial app that connects to bank and investment accounts, like Wells Fargo or Robinhood, using Plaid. It provides a straightforward display of spending and investments with a donut graph and a transaction list. The app uses AI to analyze financial data, offering personalized investment advice and categorizing users based on their spending habits.",
-//     "2": "The app features a social platform for financial discussions, using characters like Ned Flanders and Lisa Simpson for interaction. It includes a leaderboard ranking users based on their financial management, as assessed by the app’s AI. This encourages users to improve their financial standing, aligning with the goal of moving towards a financially secure future.",
-//   },
-// });
 
 projectInfo.set("bank", {
   key: "bank",
@@ -224,6 +183,54 @@ projectInfo.set("bank", {
 
   },
 });
+projectInfo.set("vxonsolutions", {
+  key: "vxonsolutions",
+  name: "vxonsolutions",
+  domain: "vxonsolutions.vercel.app",
+  tags: ["Tech Company", "Software Development", "Consulting"],
+  prevIcon: (
+    <Image
+      width={32}
+      height={32}
+      className="my-3 rounded-lg border-opacity-50"
+      src={"/vxon.jpeg"}
+      alt="vxon"
+    />
+  ),
+  icon: (
+    <Image
+      width={100}
+      height={100}
+      className="my-3 rounded-lg border-opacity-50"
+      src={"/vxon.jpeg"}
+      alt="vxon"
+    />
+  ),
+  gallery: [
+    "/vxon-website.png",
+  ],
+  description: "VXON Solutions is a tech company that specializes in software development and consulting.",
+  progress: "Building",
+  img: "/vxon.jpeg",
+  stack: ["Next.js", "TailwindCSS", "Acetenity UI", "Framer Motion"],
+  source: {
+    name: "vxonsolutions",
+    href: "https://github.com/richmond-gakpetor/vxonsolutions",
+  },
+  website: {
+    name: "vxonsolutions",
+    href: "https://vxonsolutions.vercel.app/",
+  },
+  title: "VXON Solutions",
+  paragraphs: {
+    "1": "VXON Solutions is a tech company that specializes in software development and consulting. The company offers a wide range of services, including web development, mobile app development, and digital marketing. VXON Solutions is committed to providing innovative and cost-effective solutions to its clients, helping them achieve their business goals.",
+    "2": "The company is built on a foundation of creativity, integrity, and excellence. VXON Solutions is dedicated to delivering high-quality work that meets the needs of its clients. The company's team of experienced professionals is passionate about technology and is always looking for new ways to push the boundaries of what is possible.",
+    "3": "VXON Solutions: Pioneering Tomorrow, Today!",
+    "4": "The website is still in development...",
+
+  },
+});
+
 projectInfo.set("tresolfreight", {
   key: "tresolfreight",
   name: "tresolfreight",
@@ -258,6 +265,50 @@ projectInfo.set("tresolfreight", {
     "1": "Tres-sol Freight Ltd is a logistics company that provides freight services to businesses and individuals. The company offers a wide range of services, including air freight, sea freight, road freight, and warehousing. Tres-sol Freight Ltd is committed to providing reliable and efficient logistics solutions to its customers, ensuring that their goods are delivered safely and on time.",
   },
 });
+
+
+
+
+// projectInfo.set("bank", {
+//   key: "bankapp",
+//   name: "My Bank",
+//   domain: "investingyellow.com",
+//   tags: ["Banking", "Fintech"],
+//   icon: (
+//     <Image
+//       width={100}
+//       height={100}
+//       className="my-3 rounded-lg border-opacity-50"
+//       src={"/investingyellow.png"}
+//       alt="mr burns"
+//     />
+//   ),
+//   video: "/investingyellow.mp4",
+//   prevIcon: (
+//     <Image
+//       width={32}
+//       height={32}
+//       className="my-3 rounded-lg border-opacity-50"
+//       src={"/investingyellow.png"}
+//       alt="mr burns"
+//     />
+//   ),
+//   description:
+//     "Hear about your finances through the lens of your favorite characters",
+//   progress: "Building",
+//   img: "/mrburns.png",
+//   stack: ["React Native", "TypeScript", "Expo Router", "NativeWind"],
+//   source: {
+//     name: "noahgsolomon/InvestingYellow",
+//     href: "https://github.com/noahgsolomon/InvestingYellow",
+//   },
+//   website: { name: "Investing Yellow", href: "https://investingyellow.com" },
+//   title: "MyBank",
+//   paragraphs: {
+//     "1": "Financial app that connects to bank and investment accounts, like Wells Fargo or Robinhood, using Plaid. It provides a straightforward display of spending and investments with a donut graph and a transaction list. The app uses AI to analyze financial data, offering personalized investment advice and categorizing users based on their spending habits.",
+//     "2": "The app features a social platform for financial discussions, using characters like Ned Flanders and Lisa Simpson for interaction. It includes a leaderboard ranking users based on their financial management, as assessed by the app’s AI. This encourages users to improve their financial standing, aligning with the goal of moving towards a financially secure future.",
+//   },
+// });
 
 
 export default projectInfo;
