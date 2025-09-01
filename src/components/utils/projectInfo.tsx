@@ -186,7 +186,7 @@ projectInfo.set("bank", {
 projectInfo.set("vxonsolutions", {
   key: "vxonsolutions",
   name: "vxonsolutions",
-  domain: "vxonsolutions.vercel.app",
+  domain: "vxonsolutions.com",
   tags: ["Tech Company", "Software Development", "Consulting"],
   prevIcon: (
     <Image
@@ -210,7 +210,7 @@ projectInfo.set("vxonsolutions", {
     "/vxon-website.png",
   ],
   description: "VXON Solutions is a tech company that specializes in software development and consulting.",
-  progress: "Building",
+  progress: "Shipped",
   img: "/vxon.jpeg",
   stack: ["Next.js", "TailwindCSS", "Acetenity UI", "Framer Motion"],
   source: {
@@ -219,7 +219,7 @@ projectInfo.set("vxonsolutions", {
   },
   website: {
     name: "vxonsolutions",
-    href: "https://vxonsolutions.vercel.app/",
+    href: "https://vxonsolutions.com/",
   },
   title: "VXON Solutions",
   paragraphs: {
