@@ -8,15 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        clamp: "clamp(3.5rem, 4vw, 5rem)",
-      },
       colors: {
-        primary: "#fff",
-        secondary: "#a2a2a3",
-        light: "rgba(255, 255, 255, 0.10)",
+        bg: "var(--bg)",
+        surface: "var(--surface)",
         card: "var(--card)",
-        main: "var(--main)",
+        border: "var(--border)",
+        accent: {
+          DEFAULT: "var(--accent)",
+          muted: "var(--accent-muted)",
+        },
+      },
+      fontFamily: {
+        satoshi: ["var(--font-satoshi)", "sans-serif"],
       },
     },
   },
