@@ -23,7 +23,7 @@ const paragraphs = [
 ];
 
 const stats = [
-  { value: 7000, suffix: "+", label: "App users" },
+  { value: 10000, suffix: "+", label: "App users" },
   { value: 5,    suffix: "+", label: "Projects shipped" },
   { value: 3,    suffix: "+", label: "Years building" },
 ];

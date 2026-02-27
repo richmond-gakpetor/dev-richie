@@ -20,6 +20,9 @@ export default function SmoothScroll({
       smoothWheel: true,
     });
 
+    // Expose globally so navbar / other components can call scrollTo
+    (window as any).lenis = lenis;
+
     // Sync Lenis scroll events with ScrollTrigger
     lenis.on("scroll", ScrollTrigger.update);
 
@@ -31,6 +34,7 @@ export default function SmoothScroll({
     return () => {
       gsap.ticker.remove(tick);
       lenis.destroy();
+      delete (window as any).lenis;
     };
   }, []);
 

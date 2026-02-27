@@ -4,6 +4,7 @@ import Work from "@/components/Work";
 import About from "@/components/About";
 import Stack from "@/components/Stack";
 import Contact from "@/components/Contact";
+import MeetMeModal from "@/components/MeetMeModal";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Stack />
       <Contact />
+      <MeetMeModal />
     </main>
   );
 }
