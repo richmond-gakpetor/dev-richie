@@ -5,18 +5,18 @@
 /* ─── Design Tokens ─────────────────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg: #090909;
-  --surface: #0f0f0f;
-  --card: #141414;
+  --bg: #111111;
+  --surface: #181818;
+  --card: #1e1e1e;
 
   /* Borders */
-  --border: #1e1e1e;
-  --border-hover: #2c2c2c;
+  --border: #282828;
+  --border-hover: #383838;
 
   /* Text */
   --text: #f0ede8;
-  --text-muted: #525252;
-  --text-dim: #1c1c1c;
+  --text-muted: #6b6b6b;
+  --text-dim: #2a2a2a;
 
   /* Accent — steel blue-grey */
   --accent: #7bafc7;
