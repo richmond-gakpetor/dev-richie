@@ -108,7 +108,7 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none select-none"
         style={{
           backgroundImage:
-            "radial-gradient(circle, rgba(123,175,199,0.09) 1px, transparent 1px)",
+            "radial-gradient(circle, rgba(26,143,193,0.13) 1px, transparent 1px)",
           backgroundSize: "38px 38px",
           // Fade the grid out towards the bottom so it doesn't compete with text
           maskImage:
@@ -124,7 +124,7 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 120% 100% at 50% 100%, #090909 0%, transparent 65%)",
+            "radial-gradient(ellipse 120% 100% at 50% 100%, #fafaf8 0%, transparent 65%)",
         }}
       />
 

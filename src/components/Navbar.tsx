@@ -48,7 +48,7 @@ export default function Navbar() {
       style={{
         opacity: 0, // GSAP will override
         transition: "background 0.4s ease, border-color 0.4s ease",
-        background: scrolled ? "rgba(9,9,9,0.75)" : "transparent",
+        background: scrolled ? "rgba(250,250,248,0.88)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
         borderBottom: scrolled

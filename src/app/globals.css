@@ -5,23 +5,23 @@
 /* ─── Design Tokens ─────────────────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg: #141414;
-  --surface: #1e1e1e;
-  --card: #272727;
+  --bg: #fafaf8;
+  --surface: #f3f2ee;
+  --card: #eceae4;
 
   /* Borders */
-  --border: #333333;
-  --border-hover: #4a4a4a;
+  --border: #dedbd4;
+  --border-hover: #c8c4bc;
 
   /* Text */
-  --text: #f0ede8;
-  --text-muted: #999999;
-  --text-dim: #333333;
+  --text: #1a1814;
+  --text-muted: #7a756e;
+  --text-dim: #c8c4bc;
 
-  /* Accent — vivid steel blue */
-  --accent: #5bb8e8;
-  --accent-muted: rgba(91, 184, 232, 0.08);
-  --accent-border: rgba(91, 184, 232, 0.22);
+  /* Accent — deepened steel blue for light bg */
+  --accent: #1a8fc1;
+  --accent-muted: rgba(26, 143, 193, 0.08);
+  --accent-border: rgba(26, 143, 193, 0.22);
 }
 
 /* ─── Base ──────────────────────────────────────────────────── */

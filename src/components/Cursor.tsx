@@ -43,7 +43,7 @@ export default function Cursor() {
       gsap.to(ring, {
         scale: 1,
         opacity: 1,
-        borderColor: "rgba(240,237,232,0.3)",
+        borderColor: "rgba(26,24,20,0.2)",
         duration: 0.3,
         ease: "power2.out",
       });
@@ -78,7 +78,7 @@ export default function Cursor() {
         ref={ringRef}
         aria-hidden="true"
         className="fixed top-0 left-0 z-[9998] w-9 h-9 rounded-full pointer-events-none border"
-        style={{ borderColor: "rgba(240,237,232,0.3)" }}
+        style={{ borderColor: "rgba(26,24,20,0.2)" }}
       />
     </>
   );
