@@ -112,7 +112,7 @@ export default function MeetMeModal() {
         onMouseEnter={(e) => {
           e.currentTarget.style.borderColor = "var(--accent)";
           e.currentTarget.style.color = "var(--text)";
-          e.currentTarget.style.background = "rgba(26,143,193,0.07)";
+          e.currentTarget.style.background = "rgba(123,175,199,0.07)";
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.borderColor = "var(--border-hover)";
@@ -125,7 +125,7 @@ export default function MeetMeModal() {
           className="flex items-center justify-center w-[18px] h-[18px] rounded-full flex-shrink-0"
           style={{
             background: "var(--accent)",
-            color: "#ffffff",
+            color: "#090909",
             fontSize: "0.42rem",
             paddingLeft: "1px", // optical centering of play triangle
           }}
@@ -145,7 +145,7 @@ export default function MeetMeModal() {
         className="fixed inset-0 z-[200] items-center justify-center p-6 lg:p-16"
         style={{
           display: "none",
-          background: "rgba(250,250,248,0.96)",
+          background: "rgba(9,9,9,0.94)",
           backdropFilter: "blur(24px)",
           WebkitBackdropFilter: "blur(24px)",
         }}
@@ -204,7 +204,7 @@ export default function MeetMeModal() {
               background: "#000",
               border: "1px solid var(--border)",
               boxShadow:
-                "0 24px 60px rgba(0,0,0,0.12), 0 0 0 1px rgba(26,143,193,0.08)",
+                "0 40px 80px rgba(0,0,0,0.75), 0 0 0 1px rgba(123,175,199,0.05)",
             }}
           >
             <iframe
@@ -222,7 +222,7 @@ export default function MeetMeModal() {
               className="absolute inset-0 pointer-events-none"
               style={{
                 background:
-                  "radial-gradient(ellipse 100% 100% at 50% 50%, transparent 55%, rgba(250,250,248,0.35) 100%)",
+                  "radial-gradient(ellipse 100% 100% at 50% 50%, transparent 55%, rgba(9,9,9,0.4) 100%)",
               }}
             />
           </div>

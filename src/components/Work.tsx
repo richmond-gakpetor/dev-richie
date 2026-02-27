@@ -223,8 +223,7 @@ export default function Work() {
         const track = trackRef.current!;
         const cards = cardsRef.current!;
 
-        // Give cards the computed desktop size before measuring
-        // (they get their width from the CSS class applied on lg)
+        // Apply desktop sizes synchronously so measurements are correct
         const cardEls = cards.querySelectorAll<HTMLElement>(".work-card");
         cardEls.forEach((c) => {
           c.style.width  = "clamp(440px, 33vw, 540px)";
@@ -233,28 +232,26 @@ export default function Work() {
           c.style.minHeight = "460px";
         });
 
-        // Slight delay so layout is flushed
-        requestAnimationFrame(() => {
-          const overflow = cards.scrollWidth - track.offsetWidth;
-
-          gsap.to(cards, {
-            x: -overflow,
-            ease: "none",
-            scrollTrigger: {
-              trigger: track,
-              start: "top top",
-              end: () => `+=${cards.scrollWidth - track.offsetWidth}`,
-              scrub: 1,
-              pin: true,
-              anticipatePin: 1,
-              invalidateOnRefresh: true,
-              onUpdate: (self) => {
-                if (progressRef.current) {
-                  progressRef.current.style.transform = `scaleX(${self.progress})`;
-                }
-              },
+        gsap.to(cards, {
+          // Function value so it re-evaluates correctly on every refresh/resize
+          x: () => -(cards.scrollWidth - track.offsetWidth),
+          ease: "none",
+          scrollTrigger: {
+            trigger: track,
+            start: "top top",
+            end: () => `+=${cards.scrollWidth - track.offsetWidth}`,
+            // scrub: true ties directly to Lenis' already-smoothed scroll position,
+            // avoiding the double-smoothing that scrub: 1 caused.
+            scrub: true,
+            pin: true,
+            // anticipatePin was causing a jump fighting against Lenis interpolation
+            invalidateOnRefresh: true,
+            onUpdate: (self) => {
+              if (progressRef.current) {
+                progressRef.current.style.transform = `scaleX(${self.progress})`;
+              }
             },
-          });
+          },
         });
 
         return () => {
