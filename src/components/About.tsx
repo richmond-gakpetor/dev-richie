@@ -9,16 +9,16 @@ gsap.registerPlugin(ScrollTrigger);
 // ─── Data ────────────────────────────────────────────────────────────────────
 const paragraphs = [
   {
-    emoji: "🔧",
-    text: "Built the entire UI for RoverApp from scratch — integrated APIs, shipped to production, and now serves over 7,000 users across iOS and Android.",
+    emoji: "🧱",
+    text: "Mastering the fundamentals of any piece of technology is key. Deep understanding always outlasts the trend cycle — it's the foundation everything else compounds on.",
   },
   {
-    emoji: "☁️",
-    text: "Actively expanding expertise in cloud architecture and generative AI, focusing on serverless systems and AWS infrastructure.",
+    emoji: "⚡",
+    text: "Software development is rapidly changing. I stay deliberately close to what's emerging — AI tooling, cloud-native systems, modern frameworks — to deliver leverage and speed with every build.",
   },
   {
-    emoji: "🎥",
-    text: "Recently launched a tech YouTube channel sharing insights and practical tips to help others break into the industry.",
+    emoji: "📡",
+    text: "Sharing lessons from the field on my tech YouTube channel — practical insights to help others sharpen their craft and break into the industry.",
   },
 ];
 
@@ -137,20 +137,27 @@ export default function About() {
             <blockquote
               className="font-black text-[var(--text)]"
               style={{
-                fontSize: "clamp(1.7rem, 3vw, 2.6rem)",
-                lineHeight: 1.12,
+                fontSize: "clamp(1.5rem, 2.6vw, 2.3rem)",
+                lineHeight: 1.18,
                 letterSpacing: "-0.025em",
               }}
             >
-              Let&apos;s push the boundaries of what&apos;s possible.
+              &ldquo;The best way to predict the future is to invent it.&rdquo;
             </blockquote>
+
+            <p
+              className="mt-3 text-xs font-medium uppercase tracking-widest"
+              style={{ color: "var(--accent)", letterSpacing: "0.1em" }}
+            >
+              — Alan Kay
+            </p>
 
             <p
               className="mt-6 text-sm leading-relaxed"
               style={{ color: "var(--text-muted)", maxWidth: "38ch" }}
             >
               Richmond Gakpetor — Software Engineer based in Accra, Ghana.
-              Building precise, user-centred web and mobile experiences.
+              Focused on mastering the craft and shipping software that delivers real leverage.
             </p>
 
             {/* Stats row */}

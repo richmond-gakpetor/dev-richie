@@ -36,6 +36,7 @@
     background-color: var(--bg);
     color: var(--text);
     font-family: var(--font-satoshi), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 106.25%; /* 17 px base — nudges all rem values up slightly */
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -95,21 +96,21 @@
 @layer utilities {
   /* Typography scale */
   .text-display {
-    font-size: clamp(3.5rem, 9vw, 7.5rem);
+    font-size: clamp(3.8rem, 9.5vw, 8rem);
     line-height: 0.92;
     letter-spacing: -0.04em;
     font-weight: 900;
   }
 
   .text-display-md {
-    font-size: clamp(2rem, 4.5vw, 3.75rem);
+    font-size: clamp(2.25rem, 5vw, 4.25rem);
     line-height: 0.95;
     letter-spacing: -0.028em;
     font-weight: 700;
   }
 
   .text-display-sm {
-    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    font-size: clamp(1.4rem, 2.8vw, 2.25rem);
     line-height: 1.1;
     letter-spacing: -0.018em;
     font-weight: 500;
@@ -117,7 +118,7 @@
 
   /* Label — small caps eyebrow text */
   .label {
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
@@ -128,7 +128,7 @@ function MagneticLink({ icon, label, handle, href }: Social) {
 // ─── Contact ───────────────────────────────────────────────────────────────────
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
-  const charsRef   = useRef<(HTMLSpanElement | null)[]>([]);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -178,31 +178,15 @@ export default function Contact() {
     return () => ctx.revert();
   }, []);
 
-  // ── Email hover — char-level colour sweep ─────────────────────────────────
-  const onEmailEnter = () => {
-    gsap.to(charsRef.current, {
-      color: "var(--accent)",
-      duration: 0.03,
-      stagger: { each: 0.022, from: "start" },
-      ease: "none",
-    });
-    gsap.to(".c-email-line", {
-      scaleX: 1, background: "var(--accent)",
-      duration: 0.45, ease: "power3.out",
-    });
-  };
-
-  const onEmailLeave = () => {
-    gsap.to(charsRef.current, {
-      color: "var(--text)",
-      duration: 0.03,
-      stagger: { each: 0.018, from: "end" },
-      ease: "none",
-    });
-    gsap.to(".c-email-line", {
-      scaleX: 0, background: "var(--border)",
-      duration: 0.35, ease: "power2.in",
-    });
+  // ── Copy email to clipboard ───────────────────────────────────────────────
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      window.location.href = `mailto:${EMAIL}`;
+    }
   };
 
   return (
@@ -238,43 +222,60 @@ export default function Contact() {
               collaborations. Reach out — I respond.
             </p>
 
-            {/* Giant email with char sweep */}
-            <a
-              href={`mailto:${EMAIL}`}
-              className="c-email block group"
-              onMouseEnter={onEmailEnter}
-              onMouseLeave={onEmailLeave}
+            {/* Email CTA */}
+            <div
+              className="c-email flex flex-col items-start gap-4"
               style={{ opacity: 0 }}
             >
-              <p
-                className="font-black leading-tight select-none"
+              {/* Primary button — opens mail app */}
+              <a
+                href={`mailto:${EMAIL}`}
+                className="group inline-flex items-center gap-3 px-6 py-4 rounded-xl font-semibold text-sm transition-all duration-300 hover:brightness-110 active:scale-95"
                 style={{
-                  fontSize: "clamp(1rem, 2.6vw, 2rem)",
-                  letterSpacing: "-0.025em",
-                  wordBreak: "break-all",
+                  background: "var(--accent)",
+                  color: "#0d1117",
                 }}
               >
-                {EMAIL.split("").map((char, i) => (
-                  <span
-                    key={i}
-                    ref={(el) => { charsRef.current[i] = el; }}
-                    style={{ color: "var(--text)", display: "inline" }}
-                  >
-                    {char}
-                  </span>
-                ))}
-              </p>
+                Open in mail app
+                <span className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  ↗
+                </span>
+              </a>
 
-              {/* Animated underline */}
-              <div
-                className="c-email-line mt-4 h-px"
+              {/* Secondary — copy address */}
+              <button
+                onClick={handleCopy}
+                className="inline-flex items-center gap-2 text-xs group"
                 style={{
-                  background: "var(--border)",
-                  transformOrigin: "left",
-                  transform: "scaleX(0)",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  color: "var(--text-muted)",
+                  padding: 0,
                 }}
-              />
-            </a>
+              >
+                <span className="transition-colors group-hover:text-[var(--accent)]">
+                  {copied ? "Copied to clipboard!" : EMAIL}
+                </span>
+                {copied ? (
+                  <span style={{ color: "var(--accent)" }}>✓</span>
+                ) : (
+                  <svg
+                    width="11"
+                    height="11"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    className="transition-colors group-hover:stroke-[var(--accent)]"
+                    style={{ flexShrink: 0 }}
+                  >
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                )}
+              </button>
+            </div>
           </div>
 
           {/* Right — social links */}
