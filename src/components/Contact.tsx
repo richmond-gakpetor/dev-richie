@@ -236,45 +236,11 @@ export default function Contact() {
                   color: "#0d1117",
                 }}
               >
-                Open in mail app
+                Shoot me an email
                 <span className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                   ↗
                 </span>
               </a>
-
-              {/* Secondary — copy address */}
-              <button
-                onClick={handleCopy}
-                className="inline-flex items-center gap-2 text-xs group"
-                style={{
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  color: "var(--text-muted)",
-                  padding: 0,
-                }}
-              >
-                <span className="transition-colors group-hover:text-[var(--accent)]">
-                  {copied ? "Copied to clipboard!" : EMAIL}
-                </span>
-                {copied ? (
-                  <span style={{ color: "var(--accent)" }}>✓</span>
-                ) : (
-                  <svg
-                    width="11"
-                    height="11"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    className="transition-colors group-hover:stroke-[var(--accent)]"
-                    style={{ flexShrink: 0 }}
-                  >
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                  </svg>
-                )}
-              </button>
             </div>
           </div>
 

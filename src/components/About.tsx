@@ -10,15 +10,15 @@ gsap.registerPlugin(ScrollTrigger);
 const paragraphs = [
   {
     emoji: "🧱",
-    text: "Mastering the fundamentals of any piece of technology is key. Deep understanding always outlasts the trend cycle — it's the foundation everything else compounds on.",
+    text: "I believe mastering the fundamentals is what separates engineers who adapt from those who get left behind. Before chasing the next tool, I make sure I deeply understand the one in front of me — that foundation is what everything else compounds on.",
   },
   {
     emoji: "⚡",
-    text: "Software development is rapidly changing. I stay deliberately close to what's emerging — AI tooling, cloud-native systems, modern frameworks — to deliver leverage and speed with every build.",
+    text: "That grounding is what lets me move fast when it matters. Software is changing rapidly — AI tooling, cloud-native systems, new frameworks every quarter — and having strong fundamentals means I can cut through the noise, pick up what's genuinely useful, and ship with real speed and leverage.",
   },
   {
     emoji: "📡",
-    text: "Sharing lessons from the field on my tech YouTube channel — practical insights to help others sharpen their craft and break into the industry.",
+    text: "And because I know how hard it is to build that foundation without guidance, I document the journey. My tech YouTube channel is where I share what I'm learning in the field — so others don't have to figure it out alone.",
   },
 ];
 
