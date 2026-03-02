@@ -280,7 +280,7 @@ export default function Contact() {
           <span className="label" style={{ fontSize: "0.6rem" }}>
             Richmond Gakpetor &copy; 2026
           </span>
-          <span className="label" style={{ fontSize: "0.6rem" }}>
+          <span className="label hidden" style={{ fontSize: "0.6rem" }}>
             Designed &amp; built from scratch · Next.js · GSAP · Tailwind
           </span>
         </div>
