@@ -231,6 +231,42 @@ projectInfo.set("vxonsolutions", {
   },
 });
 
+projectInfo.set("xposuregh", {
+  key: "xposuregh",
+  name: "xposuregh",
+  domain: "xposuregh.com",
+  tags: ["Business", "Billboard Advertising", "Marketing"],
+  prevIcon: (
+    <Image
+      width={32}
+      height={32}
+      className="my-3 rounded-lg border-opacity-50"
+      src={"/xposuregh.png"}
+      alt="xposuregh"
+    />
+  ),
+  icon: (
+    <Image
+      width={100}
+      height={100}
+      className="my-3 rounded-lg border-opacity-50"
+      src={"/xposuregh.png"}
+      alt="xposuregh"
+    />
+  ),
+  video: "/xposuregh.mp4",
+  description: "Xposure GH is a billboard advertising company that helps businesses reach their target audience through outdoor advertising.",
+  progress: "Shipped",
+  img: "/xposuregh.png",
+  stack: ["Next.js", "TailwindCSS", "Framer Motion", "FastAPI", "AWS"],
+  website: { name: "Xposure GH", href: "https://xposuregh.com/" },
+  title: "Xposure GH",
+  paragraphs: {
+    "1": "Xposure GH is a billboard advertising company that helps businesses reach their target audience through outdoor advertising.",
+    "2": "Across the bustling streets of Ghana, Xposure GH stands as a beacon for businesses seeking to amplify their brand presence. With a keen understanding of the local market, Xposure GH connects businesses with billboard owners to ensure maximum visibility.",
+  },
+});
+
 projectInfo.set("tresolfreight", {
   key: "tresolfreight",
   name: "tresolfreight",

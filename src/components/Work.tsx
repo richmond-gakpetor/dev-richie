@@ -8,7 +8,7 @@ import projectInfo from "@/components/utils/projectInfo";
 gsap.registerPlugin(ScrollTrigger);
 
 // ─── Data ───────────────────────────────────────────────────────────────────
-const FEATURED_KEYS = ["roverapp", "eazyed", "dashboard", "vxonsolutions"];
+const FEATURED_KEYS = ["roverapp", "eazyed", "xposuregh", "dashboard", "vxonsolutions"];
 const projects = FEATURED_KEYS.map((k) => projectInfo.get(k)!);
 type ProjectEntry = NonNullable<ReturnType<typeof projectInfo.get>>;
 
