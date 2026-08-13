@@ -302,49 +302,4 @@ projectInfo.set("tresolfreight", {
   },
 });
 
-
-
-
-// projectInfo.set("bank", {
-//   key: "bankapp",
-//   name: "My Bank",
-//   domain: "investingyellow.com",
-//   tags: ["Banking", "Fintech"],
-//   icon: (
-//     <Image
-//       width={100}
-//       height={100}
-//       className="my-3 rounded-lg border-opacity-50"
-//       src={"/investingyellow.png"}
-//       alt="mr burns"
-//     />
-//   ),
-//   video: "/investingyellow.mp4",
-//   prevIcon: (
-//     <Image
-//       width={32}
-//       height={32}
-//       className="my-3 rounded-lg border-opacity-50"
-//       src={"/investingyellow.png"}
-//       alt="mr burns"
-//     />
-//   ),
-//   description:
-//     "Hear about your finances through the lens of your favorite characters",
-//   progress: "Building",
-//   img: "/mrburns.png",
-//   stack: ["React Native", "TypeScript", "Expo Router", "NativeWind"],
-//   source: {
-//     name: "noahgsolomon/InvestingYellow",
-//     href: "https://github.com/noahgsolomon/InvestingYellow",
-//   },
-//   website: { name: "Investing Yellow", href: "https://investingyellow.com" },
-//   title: "MyBank",
-//   paragraphs: {
-//     "1": "Financial app that connects to bank and investment accounts, like Wells Fargo or Robinhood, using Plaid. It provides a straightforward display of spending and investments with a donut graph and a transaction list. The app uses AI to analyze financial data, offering personalized investment advice and categorizing users based on their spending habits.",
-//     "2": "The app features a social platform for financial discussions, using characters like Ned Flanders and Lisa Simpson for interaction. It includes a leaderboard ranking users based on their financial management, as assessed by the app’s AI. This encourages users to improve their financial standing, aligning with the goal of moving towards a financially secure future.",
-//   },
-// });
-
-
 export default projectInfo;
