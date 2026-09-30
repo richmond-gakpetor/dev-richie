@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import Image from "next/image";
 
 export type URL = {
@@ -54,7 +55,7 @@ projectInfo.set("roverapp", {
     />
   ) as JSX.Element,
   description:
-    "This app delivers a unique experience for easy ticket purchase, browsing show repertoire, and engaging with feeds",
+    "Event discovery and ticketing app with a social feed. Live on iOS and Android.",
   img: "/rover-app-icon.png",
   gallery: ["/ra-1.jpg",
     "/ra-2.jpg",
@@ -65,7 +66,7 @@ projectInfo.set("roverapp", {
     "/ra-7.jpg",
     "/ra-8.jpg",
   ],
-  stack: ["React Native", "Expo Router", "Nativewind", "Sentry"],
+  stack: ["React Native", "Expo Router", "NativeWind", "Sentry"],
   website: { name: "roverapp", href: "https://play.google.com/store/search?q=roverapp&c=apps&hl=en" },
   title: "RoverApp",
   paragraphs: {
@@ -91,11 +92,11 @@ projectInfo.set("eazyed", {
     />
   ),
   description:
-    "Eazyed is an innovative educational platform aimed at democratizing access to quality learning resources.",
+    "Learning platform widening access to quality course material for students in Ghana.",
   progress: "Beta",
   img: "/eazyed-logo.png",
   gallery: ["/eazyed-1.png", "/eazyed-2.png", "/eazyed-3.png", "/eazyed-4.png"],
-  stack: ["Next.js", "TailwindCSS", "Carbon UI", "Serverless", "AWS"],
+  stack: ["Next.js", "Tailwind CSS", "Carbon UI", "Serverless", "AWS"],
   domain: "eazyed",
   website: {
     name: "eazyed",
@@ -125,13 +126,13 @@ projectInfo.set("dashboard", {
       alt="hyperpay logo"
     />
   ),
-  description: "Client dashboard for viewing customer data analytics and managing sales.",
+  description: "Merchant-facing dashboard for sales management and customer analytics.",
   progress: "Shipped",
   img: "/hyperpay.png",
   gallery: ["/dashboard-1.png", "/dashboard-2.png", "/dashboard-3.png"],
-  stack: ["React", "Ant Design", "Tailwind.css"],
+  stack: ["React", "Ant Design", "Tailwind CSS"],
   website: { name: "dashboard", href: "https://merchant.hyperpaygh.com" },
-  title: "Dashboard",
+  title: "HyperPay Merchant",
   paragraphs: {
     "1": "The dashboard is a client-facing web application that provides users with access to customer data analytics and other management tools. The app is built using React, Ant Design, and Tailwind.css, and is designed to be user-friendly and easy to navigate. The dashboard features a clean and modern interface, with interactive tables and graphs that allow users to visualize their data in real-time.",
 
@@ -209,10 +210,10 @@ projectInfo.set("vxonsolutions", {
   gallery: [
     "/vxon-website.png",
   ],
-  description: "VXON Solutions is a tech company that specializes in software development and consulting.",
+  description: "Company site for a software development and consulting studio.",
   progress: "Shipped",
   img: "/vxon.jpeg",
-  stack: ["Next.js", "TailwindCSS", "Acetenity UI", "Framer Motion"],
+  stack: ["Next.js", "Tailwind CSS", "Aceternity UI", "Framer Motion"],
   source: {
     name: "vxonsolutions",
     href: "https://github.com/richmond-gakpetor/vxonsolutions",
@@ -255,14 +256,14 @@ projectInfo.set("xposuregh", {
     />
   ),
   video: "/xposuregh.mp4",
-  description: "Xposure GH is a billboard advertising company that helps businesses reach their target audience through outdoor advertising.",
+  description: "Outdoor advertising platform connecting businesses with billboard space across Ghana.",
   progress: "Shipped",
   img: "/xposuregh.png",
-  stack: ["Next.js", "TailwindCSS", "Framer Motion", "FastAPI", "AWS"],
+  stack: ["Next.js", "Tailwind CSS", "Framer Motion", "FastAPI", "AWS"],
   website: { name: "Xposure GH", href: "https://xposuregh.com/" },
   title: "Xposure GH",
   paragraphs: {
-    "1": "Xposure GH is a billboard advertising company that helps businesses reach their target audience through outdoor advertising.",
+    "1": "Outdoor advertising platform connecting businesses with billboard space across Ghana.",
     "2": "Across the bustling streets of Ghana, Xposure GH stands as a beacon for businesses seeking to amplify their brand presence. With a keen understanding of the local market, Xposure GH connects businesses with billboard owners to ensure maximum visibility.",
   },
 });

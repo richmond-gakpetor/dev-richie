@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -10,16 +9,15 @@ const config: Config = {
     extend: {
       colors: {
         bg: "var(--bg)",
-        surface: "var(--surface)",
-        card: "var(--card)",
-        border: "var(--border)",
-        accent: {
-          DEFAULT: "var(--accent)",
-          muted: "var(--accent-muted)",
-        },
+        fg: "var(--text)",
+        muted: "var(--text-muted)",
+        faint: "var(--text-faint)",
+        line: "var(--border)",
+        accent: "var(--accent)",
       },
       fontFamily: {
-        satoshi: ["var(--font-satoshi)", "sans-serif"],
+        sans: ["var(--font-satoshi)", "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
     },
   },
