@@ -21,12 +21,12 @@ const mono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Richmond Gakpetor — Software Engineer",
+  title: "Richmond Gakpetor — Software Engineer, Applied AI",
   description:
-    "Software engineer in Accra, Ghana, building web and mobile products used by thousands.",
+    "Software engineer in Accra, Ghana, building applied AI: fine-tuned language models, RAG systems, and the products around them. MSc Computer Science.",
   openGraph: {
     title: "Richmond Gakpetor",
-    description: "Software engineer building web and mobile products.",
+    description: "Software engineer building applied AI.",
     type: "website",
   },
   twitter: { card: "summary_large_image", creator: "@_vision_richie" },

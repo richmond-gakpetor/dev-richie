@@ -1,7 +1,8 @@
 import Section from "@/components/Section";
 
 const STACK = [
-  { area: "Languages", tools: ["TypeScript", "JavaScript", "Python"] },
+  { area: "AI / ML", tools: ["PyTorch", "Hugging Face", "LLM fine-tuning", "RAG", "NLP"] },
+  { area: "Languages", tools: ["Python", "TypeScript", "JavaScript"] },
   { area: "Web", tools: ["React", "Next.js", "Tailwind CSS"] },
   { area: "Mobile", tools: ["React Native", "Expo"] },
   { area: "Backend", tools: ["Node.js", "GraphQL", "PostgreSQL", "MongoDB"] },

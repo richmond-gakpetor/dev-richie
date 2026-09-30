@@ -5,10 +5,18 @@ export default function About() {
     <Section id="about" label="About" index={3}>
       <div className="space-y-5 text-[1.0625rem] text-muted">
         <p>
-          <span className="text-fg">I&apos;m a software engineer in Accra</span>,
-          working across web and mobile, mostly in TypeScript, React, React
-          Native, and the AWS services underneath them. The products I&apos;ve
-          built are used by thousands of people.
+          <span className="text-fg">
+            I&apos;m a software engineer in Accra with an MSc in Computer Science
+          </span>
+          . My thesis focused on fine-tuning
+          quantized small language models, and I&apos;ve built RAG applications
+          with the Hugging Face ecosystem.
+        </p>
+        <p>
+          Day to day, I ship production software: web and mobile products in
+          TypeScript, React, and React Native on AWS, used by thousands of
+          people. That&apos;s the edge I bring to AI work. A model
+          only matters once it&apos;s reliable, fast, and in someone&apos;s hands.
         </p>
         <p>
           I put fundamentals first. Tools turn over every quarter; a real

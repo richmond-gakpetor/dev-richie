@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <Section id="contact" label="Contact" index={5}>
       <p className="text-muted">
-        Open to new roles, interesting problems, and good collaborators. Email
+        Open to applied AI and ML engineering roles, and interesting problems. Email
         is the fastest way to reach me.
       </p>
 
