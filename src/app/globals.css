@@ -4,144 +4,100 @@
 
 /* ─── Design Tokens ─────────────────────────────────────────── */
 :root {
-  /* Backgrounds */
-  --bg: #141414;
-  --surface: #1e1e1e;
-  --card: #272727;
+  --bg: #fafaf9;
+  --text: #161615;
+  --text-muted: #6b6b66;
+  --text-faint: #a3a39e;
+  --border: #e7e7e4;
+  --accent: #1a7fb5;
 
-  /* Borders */
-  --border: #333333;
-  --border-hover: #4a4a4a;
+  color-scheme: light;
+}
 
-  /* Text */
-  --text: #f0ede8;
-  --text-muted: #999999;
-  --text-dim: #333333;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111110;
+    --text: #ededeb;
+    --text-muted: #93938e;
+    --text-faint: #5e5e5a;
+    --border: #232322;
+    --accent: #5bb8e8;
 
-  /* Accent — vivid steel blue */
-  --accent: #5bb8e8;
-  --accent-muted: rgba(91, 184, 232, 0.08);
-  --accent-border: rgba(91, 184, 232, 0.22);
+    color-scheme: dark;
+  }
 }
 
 /* ─── Base ──────────────────────────────────────────────────── */
 @layer base {
-  *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
   html {
     background-color: var(--bg);
     color: var(--text);
-    font-family: var(--font-satoshi), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 106.25%; /* 17 px base — nudges all rem values up slightly */
-    font-weight: 300;
+    font-family: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
   }
 
   body {
     background-color: var(--bg);
-    overflow-x: hidden;
-    animation: page-in 0.45s ease forwards;
+    line-height: 1.65;
   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
+  ::selection {
+    background-color: var(--text);
+    color: var(--bg);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
+      animation-delay: 0ms !important;
       transition-duration: 0.01ms !important;
     }
   }
+}
 
-  ::selection {
-    background-color: var(--accent-muted);
-    color: var(--text);
+/* ─── Components ────────────────────────────────────────────── */
+@layer components {
+  /* Underline that draws in on hover */
+  .link {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+  }
+  .link:hover,
+  .link:focus-visible {
+    background-size: 100% 1px;
   }
 
-  ::-webkit-scrollbar {
-    width: 2px;
+  /* One quiet entrance: sections rise in sequence on first paint */
+  .reveal {
+    animation: reveal 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: calc(var(--i, 0) * 90ms);
   }
 
-  ::-webkit-scrollbar-track {
-    background: var(--bg);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: var(--border-hover);
-    border-radius: 1px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent);
+  /* Hovering one row in a list dims the others */
+  @media (hover: hover) {
+    .dim-siblings:hover > * {
+      opacity: 0.4;
+    }
+    .dim-siblings > *:hover {
+      opacity: 1;
+    }
   }
 }
 
-/* ─── Keyframes ─────────────────────────────────────────────── */
-@keyframes page-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* ─── Utilities ─────────────────────────────────────────────── */
-@layer utilities {
-  /* Typography scale */
-  .text-display {
-    font-size: clamp(3.8rem, 9.5vw, 8rem);
-    line-height: 0.92;
-    letter-spacing: -0.04em;
-    font-weight: 900;
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
   }
-
-  .text-display-md {
-    font-size: clamp(2.25rem, 5vw, 4.25rem);
-    line-height: 0.95;
-    letter-spacing: -0.028em;
-    font-weight: 700;
-  }
-
-  .text-display-sm {
-    font-size: clamp(1.4rem, 2.8vw, 2.25rem);
-    line-height: 1.1;
-    letter-spacing: -0.018em;
-    font-weight: 500;
-  }
-
-  /* Label — small caps eyebrow text */
-  .label {
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-  }
-
-  /* Section padding */
-  .section-pad {
-    padding: clamp(5rem, 10vw, 8rem) clamp(1.5rem, 6vw, 5rem);
-  }
-
-  /* Horizontal divider */
-  .divider {
-    border: none;
-    border-top: 1px solid var(--border);
-  }
-
-  /* Cursor: hide default for custom cursor */
-  .cursor-none *, .cursor-none {
-    cursor: none !important;
-  }
-
-  /* Hide scrollbar */
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 }

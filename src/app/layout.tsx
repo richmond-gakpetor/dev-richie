@@ -1,29 +1,42 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import SmoothScroll from "@/components/SmoothScroll";
-import Cursor from "@/components/Cursor";
-import Grain from "@/components/Grain";
 import "./globals.css";
 
 const satoshi = localFont({
   src: [
-    { path: "./satoshi/Satoshi-Light.otf",      weight: "300", style: "normal" },
-    { path: "./satoshi/Satoshi-LightItalic.otf", weight: "300", style: "italic" },
-    { path: "./satoshi/Satoshi-Regular.otf",     weight: "400", style: "normal" },
-    { path: "./satoshi/Satoshi-Italic.otf",      weight: "400", style: "italic" },
-    { path: "./satoshi/Satoshi-Medium.otf",      weight: "500", style: "normal" },
-    { path: "./satoshi/Satoshi-Bold.otf",        weight: "700", style: "normal" },
-    { path: "./satoshi/Satoshi-Black.otf",       weight: "900", style: "normal" },
+    { path: "./satoshi/Satoshi-Regular.otf", weight: "400", style: "normal" },
+    { path: "./satoshi/Satoshi-Medium.otf",  weight: "500", style: "normal" },
+    { path: "./satoshi/Satoshi-Bold.otf",    weight: "700", style: "normal" },
   ],
   variable: "--font-satoshi",
+  display: "swap",
+});
+
+const mono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Richmond Gakpetor — Software Engineer",
   description:
-    "Software engineer crafting precise, user-centered web and mobile experiences.",
+    "Software engineer in Accra, Ghana, building web and mobile products used by thousands.",
+  openGraph: {
+    title: "Richmond Gakpetor",
+    description: "Software engineer building web and mobile products.",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image", creator: "@_vision_richie" },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafaf9" },
+    { media: "(prefers-color-scheme: dark)",  color: "#111110" },
+  ],
 };
 
 export default function RootLayout({
@@ -32,13 +45,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={satoshi.variable}>
+    <html lang="en" className={`${satoshi.variable} ${mono.variable}`}>
       <body>
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
-        <Cursor />
-        <Grain />
+        {children}
         <Analytics />
       </body>
     </html>
