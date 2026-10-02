@@ -32,6 +32,43 @@ type ProjectInfo = {
 const projectInfo = new Map<string, ProjectInfo>();
 
 // Add entries to the Map
+
+projectInfo.set("emergo", {
+  key: "emergo",
+  name: "Emergo",
+  tags: ["Personal Growth", "Wellness", "Affirmations"],
+  prevIcon: (
+    <Image width={32} height={32} src={"/emergo-logo.png"} alt="emergo logo" />
+  ),
+  icon: (
+    <Image
+      width={100}
+      height={100}
+      className="my-3 rounded-lg border-opacity-50"
+      src={"/emergo-logo.png"}
+      alt="emergo logo"
+    />
+  ),
+  description:
+    "An affirmation and personal growth app helping people build confidence and positive habits through daily spoken affirmations.",
+  progress: "Shipped",
+  img: "",
+  gallery: [
+    "",
+  ],
+  stack: ["React Native", "Expo", "TypeScript", "NativeWind", "RevenueCat"],
+  domain: "emergo",
+  website: {
+    name: "Emergo",
+    href: "https://tryemergo.app",
+  },
+  title: "Emergo",
+  paragraphs: {
+    "1": "Emergo is a personal growth and affirmation app that helps people build confidence, strengthen positive habits, and develop a healthier mindset through the daily practice of spoken affirmations. Users can create personalized affirmations and speak them aloud while Emergo listens and tracks their repetitions.",
+    "2": "The app turns affirmation practice into an engaging daily experience with voice-based repetition tracking, personalized coaching prompts, progress and streak tracking, a growing plant that reflects consistency, motivational recaps, background sounds, and Kindred—a space for anonymous encouragement and connection. Emergo is designed to make personal growth practical, measurable, and easy to incorporate into everyday life.",
+  },
+});
+
 projectInfo.set("roverapp", {
   key: "roverapp",
   name: "RoverApp",
@@ -93,7 +130,7 @@ projectInfo.set("eazyed", {
   ),
   description:
     "Learning platform widening access to quality course material for students in Ghana.",
-  progress: "Beta",
+  progress: "Shipped",
   img: "/eazyed-logo.png",
   gallery: ["/eazyed-1.png", "/eazyed-2.png", "/eazyed-3.png", "/eazyed-4.png"],
   stack: ["Next.js", "Tailwind CSS", "Carbon UI", "Serverless", "AWS"],
