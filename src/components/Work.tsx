@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 import projectInfo from "@/components/utils/projectInfo";
 
-const FEATURED_KEYS = ["roverapp", "eazyed", "xposuregh", "dashboard", "vxonsolutions"];
+const FEATURED_KEYS = ["emergo", "roverapp", "eazyed", "xposuregh", "dashboard"];
 const projects = FEATURED_KEYS.map((k) => projectInfo.get(k)!);
 
 export default function Work() {
