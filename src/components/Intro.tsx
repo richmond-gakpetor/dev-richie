@@ -21,7 +21,7 @@ export default function Intro() {
           Open to AI/ML roles
         </span>
         <span>Accra, Ghana</span>
-        <IntroVideo />
+        {/* <IntroVideo /> */}
       </div>
     </section>
   );
